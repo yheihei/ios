@@ -13,7 +13,7 @@
         <!--最初のViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="最初のViewController" id="BYZ-38-t0r" customClass="TopViewController" sceneMemberID="viewController">
+                <viewController title="最初のViewController" id="BYZ-38-t0r" customClass="TopViewController" customModule="MoveViewTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Y5g-rw-DMC" kind="show" id="CnC-eJ-nZ0"/>
+                                    <segue destination="Y5g-rw-DMC" kind="show" identifier="ncSegue" id="CnC-eJ-nZ0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNT-gW-glt">
@@ -114,6 +114,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="receivedTextLabel" destination="Uen-fN-xt0" id="4dd-je-fZR"/>
+                        <outlet property="sendingTextField" destination="74Z-Ee-Ifl" id="ud8-V7-TXX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="渡されたテキスト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MR3-TM-qVa">
-                                <rect key="frame" x="16" y="36" width="343" height="40"/>
+                                <rect key="frame" x="16" y="80" width="343" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="vTd-3m-S00"/>
@@ -138,7 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="前画面に戻すテキスト" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z5T-4R-JS1">
-                                <rect key="frame" x="16" y="108" width="343" height="40"/>
+                                <rect key="frame" x="16" y="152" width="343" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="FOF-Q2-xAy"/>
                                 </constraints>
@@ -147,7 +151,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWH-P5-OBC">
-                                <rect key="frame" x="16" y="188" width="343" height="40"/>
+                                <rect key="frame" x="16" y="232" width="343" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="nVb-Ec-cVG"/>
                                 </constraints>
@@ -169,11 +173,24 @@
                         <viewLayoutGuide key="safeArea" id="say-pd-A9W"/>
                     </view>
                     <navigationItem key="navigationItem" id="No8-32-4oK">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="MdM-Eo-24s"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="9In-VR-ESn"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="MdM-Eo-24s">
+                            <connections>
+                                <action selector="close:" destination="SpT-Zw-iOH" id="oCg-AD-joH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="9In-VR-ESn">
+                            <connections>
+                                <segue destination="h11-Qi-Gi2" kind="unwind" unwindAction="unwindToTopWithSender:" id="gqv-qA-gpF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="returnTextField" destination="Z5T-4R-JS1" id="WQc-bq-fOY"/>
+                        <outlet property="showTextLabel" destination="MR3-TM-qVa" id="gGj-H0-JZ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxO-lm-Dxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="h11-Qi-Gi2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1665" y="134"/>
         </scene>
@@ -269,6 +286,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HJp-FN-NwE"/>
+        <segue reference="1dp-bZ-2Ng"/>
     </inferredMetricsTieBreakers>
 </document>
