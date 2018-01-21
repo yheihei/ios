@@ -10,6 +10,9 @@ import UIKit
 
 class TopViewController: UIViewController {
 
+    @IBOutlet weak var sendingTextField: UITextField!
+    @IBOutlet weak var receivedTextLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +24,65 @@ class TopViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    // segueによる遷移前にここを通る
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        guard let identifier = segue.identifier else {
+            // identifierが取れなかったら処理やめる
+            return
+        }
+        
+        if(identifier == "ncSegue") {
+            // NavigationControllerへの遷移の場合
+            
+            // segueから遷移先のNavigationControllerを取得
+            let nc = segue.destination as! UINavigationController
+            
+            // NavigationControllerの一番目のViewControllerが次の画面
+            let vc = nc.topViewController as! NavitukiViewController
+            
+            // 次画面のテキスト表示用ラベルのテキストを、本画面のテキストフィールドのテキストに
+            vc.receiveText = self.sendingTextField.text
+        }
     }
-    */
+    
+    
+    @IBAction func moveNC(_ sender: Any) {
+        let storyboard: UIStoryboard = self.storyboard!
+        // 設定したidentifier名でNavigationControllerを取得
+        let nc = storyboard.instantiateViewController(withIdentifier: "navigationController") as! UINavigationController
+        
+        // NavigationControllerの一番目のViewControllerが次の画面
+        let vc = nc.topViewController as! NavitukiViewController
+        
+        // 次画面のテキスト表示用ラベルのテキストを、本画面のテキストフィールドのテキストに
+        vc.receiveText = self.sendingTextField.text
+        
+        // NavigationControllerを表示(NCのトップのViewControllerが表示される)
+        self.present(nc, animated: true, completion: nil)
+    }
+    
+    @IBAction func moveVC(_ sender: Any) {
+        let storyboard: UIStoryboard = self.storyboard!
+        // 設定したidentifier名で次画面のViewControllerを取得
+        let vc = storyboard.instantiateViewController(withIdentifier: "singleVC") as! SingleViewController
+        
+        // 次画面のViewControllerを表示
+//        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    // 次画面から戻ってくるときに呼ばれる
+    @IBAction func unwindToTop(sender: UIStoryboardSegue) {
+        // 次画面のNavitukiViewControllerを受け取る
+        guard let sourceVC = sender.source as? NavitukiViewController else {
+            // NavitukiViewControllerでなかったらやめる
+            return
+        }
+        
+        // NavitukiViewControllerの値を受け取って更新
+        self.receivedTextLabel.text = sourceVC.returnTextField.text
+    }
 
 }
