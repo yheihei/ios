@@ -228,6 +228,9 @@
                                 <state key="normal" title="NCつきVCに遷移(コードから)">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveNabitukiVC:" destination="1GC-YA-ZVT" eventType="touchUpInside" id="pci-Rm-51P"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="次画面から戻ってきたテキスト" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm6-Q6-6QW">
                                 <rect key="frame" x="16" y="286" width="343" height="40"/>

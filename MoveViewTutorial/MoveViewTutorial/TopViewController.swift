@@ -68,7 +68,8 @@ class TopViewController: UIViewController {
         let vc = storyboard.instantiateViewController(withIdentifier: "singleVC") as! SingleViewController
         
         // 次画面のViewControllerを表示
-        self.present(vc, animated: true, completion: nil)
+//        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

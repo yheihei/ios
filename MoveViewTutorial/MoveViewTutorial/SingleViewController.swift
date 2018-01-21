@@ -42,5 +42,18 @@ class SingleViewController: UIViewController {
             vc.receiveText = self.sendingTextField.text
         }
     }
+    
+    @IBAction func moveNabitukiVC(_ sender: Any) {
+        let storyboard: UIStoryboard = self.storyboard!
+        // 設定したidentifier名で次画面のViewControllerを取得
+        let vc = storyboard.instantiateViewController(withIdentifier: "navitukiView") as! NavitukiViewController
+        
+        // 次画面のテキスト表示用ラベルのテキストを、本画面のテキストフィールドのテキストに
+        vc.receiveText = self.sendingTextField.text
+        
+        // 次画面のViewControllerを表示
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
 }
