@@ -62,6 +62,16 @@ class TopViewController: UIViewController {
         self.present(nc, animated: true, completion: nil)
     }
     
+    @IBAction func moveVC(_ sender: Any) {
+        let storyboard: UIStoryboard = self.storyboard!
+        // 設定したidentifier名で次画面のViewControllerを取得
+        let vc = storyboard.instantiateViewController(withIdentifier: "singleVC") as! SingleViewController
+        
+        // 次画面のViewControllerを表示
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
     // 次画面から戻ってくるときに呼ばれる
     @IBAction func unwindToTop(sender: UIStoryboardSegue) {
         // 次画面のNavitukiViewControllerを受け取る

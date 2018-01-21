@@ -73,6 +73,9 @@
                                 <state key="normal" title="VCに遷移(コードから)">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PtH-cM-oBV"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="次画面に渡したいテキスト" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="74Z-Ee-Ifl">
                                 <rect key="frame" x="16" y="80" width="343" height="40"/>
@@ -190,7 +193,7 @@
         <!--ViewController単体-->
         <scene sceneID="2aH-Rg-M8z">
             <objects>
-                <viewController title="ViewController単体" id="1GC-YA-ZVT" customClass="SingleViewController" customModule="MoveViewTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="singleVC" title="ViewController単体" id="1GC-YA-ZVT" customClass="SingleViewController" customModule="MoveViewTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="smW-9F-4L7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
