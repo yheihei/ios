@@ -10,6 +10,10 @@ import UIKit
 
 class SingleViewController: UIViewController {
 
+    
+    @IBOutlet weak var sendingTextField: UITextField!
+    @IBOutlet weak var receivedTextLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +24,23 @@ class SingleViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        guard let identifier = segue.identifier else {
+            // identifierが取れなかったら処理やめる
+            return
+        }
+        
+        if(identifier == "vcToNCTukiVC") {
+            // NCつきViewControllerへの遷移の場合
+            
+            // segueから遷移先のViewControllerを取得
+            let vc = segue.destination as! NavitukiViewController
+            
+            // 次画面のテキスト表示用ラベルのテキストを、本画面のテキストフィールドのテキストに
+            vc.receiveText = self.sendingTextField.text
+        }
     }
-    */
 
 }

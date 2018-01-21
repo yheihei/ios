@@ -46,6 +46,22 @@ class TopViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func moveNC(_ sender: Any) {
+        let storyboard: UIStoryboard = self.storyboard!
+        // 設定したidentifier名でNavigationControllerを取得
+        let nc = storyboard.instantiateViewController(withIdentifier: "navigationController") as! UINavigationController
+        
+        // NavigationControllerの一番目のViewControllerが次の画面
+        let vc = nc.topViewController as! NavitukiViewController
+        
+        // 次画面のテキスト表示用ラベルのテキストを、本画面のテキストフィールドのテキストに
+        vc.receiveText = self.sendingTextField.text
+        
+        // NavigationControllerを表示(NCのトップのViewControllerが表示される)
+        self.present(nc, animated: true, completion: nil)
+    }
+    
     // 次画面から戻ってくるときに呼ばれる
     @IBAction func unwindToTop(sender: UIStoryboardSegue) {
         // 次画面のNavitukiViewControllerを受け取る

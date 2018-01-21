@@ -40,14 +40,35 @@ class NavitukiViewController: UIViewController {
     @IBAction func close(_ sender: Any) {
        // 表示元がViewControllerかNavigationControllerかで消し方が違う
         if self.presentingViewController is UINavigationController {
-            // UINavigationControllerの場合
+            //  表示元がNavigationControllerの場合
             self.dismiss(animated: true, completion: nil)
         } else {
-            // UIViewControllerの場合
-            self.navigationController?.dismiss(animated: true, completion: nil)
+            // 表示元がViewControllerの場合
+            self.navigationController?.popViewController(animated: true)
+        }
+    }                                                                                   
+    
+    
+    @IBAction func done(_ sender: Any) {
+        // 表示の大元がViewControllerかNavigationControllerかで戻る場所を判断する
+        if self.presentingViewController is UINavigationController {
+            //  表示の大元がNavigationControllerの場合
+            let nc = self.presentingViewController as! UINavigationController
+            let vc = nc.topViewController as! TopViewController
+            vc.receivedTextLabel.text = self.returnTextField.text
+            self.dismiss(animated: true, completion: nil)
+            
+        } else {
+            // 表示元がViewControllerの場合
+            // 前画面のViewControllerを取得
+            let count = (self.navigationController?.viewControllers.count)! - 2
+            let vc = self.navigationController?.viewControllers[count] as! SingleViewController
+            vc.receivedTextLabel.text = self.returnTextField.text
+            // 画面を消す
+            self.navigationController?.popViewController(animated: true)
         }
     }
-
+    
     /*
      // MARK: - Navigation
      
