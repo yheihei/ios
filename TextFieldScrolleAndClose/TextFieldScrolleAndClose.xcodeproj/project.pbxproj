@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC5D23DD201ED0400029B84C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5D23DC201ED0400029B84C /* AppDelegate.swift */; };
+		EC5D23E2201ED0400029B84C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5D23E0201ED0400029B84C /* Main.storyboard */; };
+		EC5D23E4201ED0400029B84C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5D23E3201ED0400029B84C /* Assets.xcassets */; };
+		EC5D23E7201ED0400029B84C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5D23E5201ED0400029B84C /* LaunchScreen.storyboard */; };
+		EC5D23F2201ED0400029B84C /* TextFieldScrolleAndCloseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5D23F1201ED0400029B84C /* TextFieldScrolleAndCloseTests.swift */; };
+		EC5D23FD201ED0400029B84C /* TextFieldScrolleAndCloseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5D23FC201ED0400029B84C /* TextFieldScrolleAndCloseUITests.swift */; };
+		EC5D240B201ED1900029B84C /* TextFieldScrollAndCloseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5D240A201ED1900029B84C /* TextFieldScrollAndCloseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC5D23EE201ED0400029B84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5D23D1201ED03F0029B84C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC5D23D8201ED03F0029B84C;
+			remoteInfo = TextFieldScrolleAndClose;
+		};
+		EC5D23F9201ED0400029B84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5D23D1201ED03F0029B84C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC5D23D8201ED03F0029B84C;
+			remoteInfo = TextFieldScrolleAndClose;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC5D23D9201ED0400029B84C /* TextFieldScrolleAndClose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldScrolleAndClose.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5D23DC201ED0400029B84C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC5D23E1201ED0400029B84C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC5D23E3201ED0400029B84C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC5D23E6201ED0400029B84C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC5D23E8201ED0400029B84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5D23ED201ED0400029B84C /* TextFieldScrolleAndCloseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldScrolleAndCloseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5D23F1201ED0400029B84C /* TextFieldScrolleAndCloseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldScrolleAndCloseTests.swift; sourceTree = "<group>"; };
+		EC5D23F3201ED0400029B84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5D23F8201ED0400029B84C /* TextFieldScrolleAndCloseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldScrolleAndCloseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5D23FC201ED0400029B84C /* TextFieldScrolleAndCloseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldScrolleAndCloseUITests.swift; sourceTree = "<group>"; };
+		EC5D23FE201ED0400029B84C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5D240A201ED1900029B84C /* TextFieldScrollAndCloseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldScrollAndCloseViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC5D23D6201ED03F0029B84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5D23EA201ED0400029B84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5D23F5201ED0400029B84C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC5D23D0201ED03F0029B84C = {
+			isa = PBXGroup;
+			children = (
+				EC5D23DB201ED0400029B84C /* TextFieldScrolleAndClose */,
+				EC5D23F0201ED0400029B84C /* TextFieldScrolleAndCloseTests */,
+				EC5D23FB201ED0400029B84C /* TextFieldScrolleAndCloseUITests */,
+				EC5D23DA201ED0400029B84C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC5D23DA201ED0400029B84C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC5D23D9201ED0400029B84C /* TextFieldScrolleAndClose.app */,
+				EC5D23ED201ED0400029B84C /* TextFieldScrolleAndCloseTests.xctest */,
+				EC5D23F8201ED0400029B84C /* TextFieldScrolleAndCloseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC5D23DB201ED0400029B84C /* TextFieldScrolleAndClose */ = {
+			isa = PBXGroup;
+			children = (
+				EC5D23DC201ED0400029B84C /* AppDelegate.swift */,
+				EC5D240A201ED1900029B84C /* TextFieldScrollAndCloseViewController.swift */,
+				EC5D23E0201ED0400029B84C /* Main.storyboard */,
+				EC5D23E3201ED0400029B84C /* Assets.xcassets */,
+				EC5D23E5201ED0400029B84C /* LaunchScreen.storyboard */,
+				EC5D23E8201ED0400029B84C /* Info.plist */,
+			);
+			path = TextFieldScrolleAndClose;
+			sourceTree = "<group>";
+		};
+		EC5D23F0201ED0400029B84C /* TextFieldScrolleAndCloseTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC5D23F1201ED0400029B84C /* TextFieldScrolleAndCloseTests.swift */,
+				EC5D23F3201ED0400029B84C /* Info.plist */,
+			);
+			path = TextFieldScrolleAndCloseTests;
+			sourceTree = "<group>";
+		};
+		EC5D23FB201ED0400029B84C /* TextFieldScrolleAndCloseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC5D23FC201ED0400029B84C /* TextFieldScrolleAndCloseUITests.swift */,
+				EC5D23FE201ED0400029B84C /* Info.plist */,
+			);
+			path = TextFieldScrolleAndCloseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC5D23D8201ED03F0029B84C /* TextFieldScrolleAndClose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5D2401201ED0400029B84C /* Build configuration list for PBXNativeTarget "TextFieldScrolleAndClose" */;
+			buildPhases = (
+				EC5D23D5201ED03F0029B84C /* Sources */,
+				EC5D23D6201ED03F0029B84C /* Frameworks */,
+				EC5D23D7201ED03F0029B84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldScrolleAndClose;
+			productName = TextFieldScrolleAndClose;
+			productReference = EC5D23D9201ED0400029B84C /* TextFieldScrolleAndClose.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC5D23EC201ED0400029B84C /* TextFieldScrolleAndCloseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5D2404201ED0400029B84C /* Build configuration list for PBXNativeTarget "TextFieldScrolleAndCloseTests" */;
+			buildPhases = (
+				EC5D23E9201ED0400029B84C /* Sources */,
+				EC5D23EA201ED0400029B84C /* Frameworks */,
+				EC5D23EB201ED0400029B84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC5D23EF201ED0400029B84C /* PBXTargetDependency */,
+			);
+			name = TextFieldScrolleAndCloseTests;
+			productName = TextFieldScrolleAndCloseTests;
+			productReference = EC5D23ED201ED0400029B84C /* TextFieldScrolleAndCloseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC5D23F7201ED0400029B84C /* TextFieldScrolleAndCloseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5D2407201ED0400029B84C /* Build configuration list for PBXNativeTarget "TextFieldScrolleAndCloseUITests" */;
+			buildPhases = (
+				EC5D23F4201ED0400029B84C /* Sources */,
+				EC5D23F5201ED0400029B84C /* Frameworks */,
+				EC5D23F6201ED0400029B84C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC5D23FA201ED0400029B84C /* PBXTargetDependency */,
+			);
+			name = TextFieldScrolleAndCloseUITests;
+			productName = TextFieldScrolleAndCloseUITests;
+			productReference = EC5D23F8201ED0400029B84C /* TextFieldScrolleAndCloseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC5D23D1201ED03F0029B84C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Yohei Kokubo";
+				TargetAttributes = {
+					EC5D23D8201ED03F0029B84C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EC5D23EC201ED0400029B84C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC5D23D8201ED03F0029B84C;
+					};
+					EC5D23F7201ED0400029B84C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC5D23D8201ED03F0029B84C;
+					};
+				};
+			};
+			buildConfigurationList = EC5D23D4201ED03F0029B84C /* Build configuration list for PBXProject "TextFieldScrolleAndClose" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC5D23D0201ED03F0029B84C;
+			productRefGroup = EC5D23DA201ED0400029B84C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC5D23D8201ED03F0029B84C /* TextFieldScrolleAndClose */,
+				EC5D23EC201ED0400029B84C /* TextFieldScrolleAndCloseTests */,
+				EC5D23F7201ED0400029B84C /* TextFieldScrolleAndCloseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC5D23D7201ED03F0029B84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5D23E7201ED0400029B84C /* LaunchScreen.storyboard in Resources */,
+				EC5D23E4201ED0400029B84C /* Assets.xcassets in Resources */,
+				EC5D23E2201ED0400029B84C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5D23EB201ED0400029B84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5D23F6201ED0400029B84C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC5D23D5201ED03F0029B84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5D23DD201ED0400029B84C /* AppDelegate.swift in Sources */,
+				EC5D240B201ED1900029B84C /* TextFieldScrollAndCloseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5D23E9201ED0400029B84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5D23F2201ED0400029B84C /* TextFieldScrolleAndCloseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5D23F4201ED0400029B84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5D23FD201ED0400029B84C /* TextFieldScrolleAndCloseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC5D23EF201ED0400029B84C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC5D23D8201ED03F0029B84C /* TextFieldScrolleAndClose */;
+			targetProxy = EC5D23EE201ED0400029B84C /* PBXContainerItemProxy */;
+		};
+		EC5D23FA201ED0400029B84C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC5D23D8201ED03F0029B84C /* TextFieldScrolleAndClose */;
+			targetProxy = EC5D23F9201ED0400029B84C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC5D23E0201ED0400029B84C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5D23E1201ED0400029B84C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC5D23E5201ED0400029B84C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5D23E6201ED0400029B84C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC5D23FF201ED0400029B84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC5D2400201ED0400029B84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC5D2402201ED0400029B84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TextFieldScrolleAndClose/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yhei-web-design.TextFieldScrolleAndClose";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC5D2403201ED0400029B84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TextFieldScrolleAndClose/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yhei-web-design.TextFieldScrolleAndClose";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC5D2405201ED0400029B84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TextFieldScrolleAndCloseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yhei-web-design.TextFieldScrolleAndCloseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextFieldScrolleAndClose.app/TextFieldScrolleAndClose";
+			};
+			name = Debug;
+		};
+		EC5D2406201ED0400029B84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TextFieldScrolleAndCloseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yhei-web-design.TextFieldScrolleAndCloseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextFieldScrolleAndClose.app/TextFieldScrolleAndClose";
+			};
+			name = Release;
+		};
+		EC5D2408201ED0400029B84C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TextFieldScrolleAndCloseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yhei-web-design.TextFieldScrolleAndCloseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TextFieldScrolleAndClose;
+			};
+			name = Debug;
+		};
+		EC5D2409201ED0400029B84C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TextFieldScrolleAndCloseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yhei-web-design.TextFieldScrolleAndCloseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TextFieldScrolleAndClose;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC5D23D4201ED03F0029B84C /* Build configuration list for PBXProject "TextFieldScrolleAndClose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5D23FF201ED0400029B84C /* Debug */,
+				EC5D2400201ED0400029B84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5D2401201ED0400029B84C /* Build configuration list for PBXNativeTarget "TextFieldScrolleAndClose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5D2402201ED0400029B84C /* Debug */,
+				EC5D2403201ED0400029B84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5D2404201ED0400029B84C /* Build configuration list for PBXNativeTarget "TextFieldScrolleAndCloseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5D2405201ED0400029B84C /* Debug */,
+				EC5D2406201ED0400029B84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5D2407201ED0400029B84C /* Build configuration list for PBXNativeTarget "TextFieldScrolleAndCloseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5D2408201ED0400029B84C /* Debug */,
+				EC5D2409201ED0400029B84C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC5D23D1201ED03F0029B84C /* Project object */;
+}

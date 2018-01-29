@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  MoveViewTutorial
+//  TextFieldScrolleAndClose
 //
-//  Created by 小久保洋平 on 2018/01/19.
-//  Copyright © 2018年 小久保洋平. All rights reserved.
+//  Created by 小久保洋平 on 2018/01/29.
+//  Copyright © 2018年 Yohei Kokubo. All rights reserved.
 //
 
 import UIKit
